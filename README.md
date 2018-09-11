@@ -1,6 +1,6 @@
 # USB-Utility
 
-A user space application developed in python/C to deal with USB related issues on Ubuntu/Debian based distributions.
+A user space application developed in python to deal with USB related issues on Ubuntu/Debian based distributions.
 
 # Why create this project?
 
@@ -18,11 +18,28 @@ within the program.
 
 4. 'grub' file restore will be added to allow the user to automatically restore the previous/selected 'grub' within the system. This feature relies on the fact that the user has produced a 'grub' backup file before hand and the 
    'grub file backup' feature is implemented within the project.
+   
+5. 'grub' file deletion will be added to allow the user to delete the backup date of the 'grub' file's with the purpose of allowing the user to clear the system when required.
 
 # How to
 
 1. To fix 'USB-3.0' related issues on Ubuntu/Debian based Linux distributions, simply download the python program 'USB-3.0-Fix.py' within the 'python-modules' folder, execute the python program on the system using the command 
 'python USB-3.0-Fix.py' within the terminal window, restart your system and enter the bios menu to disable the 'iommu' feature within the bios settings, save the bios settings, restart the system and boot into your Linux distribution and test to see if the 'USB-3.0' ports work correctly as expected. Do note that when you boot into your system after the above changes and your mouse/keyboard is not working,this is due to disabling the 'iommu' within the bios and re-enabling this feature will fix this problem. Refer to the testing section for additional information.
+
+2. To use the 'grub' backup feature within the project, simply download the python program 'grub-backup.py' within the 'python-modules' folder, execute the python program on
+   the system using the command 'python grub-backup.py', enter the directory/folder name you wish to store your 'grub' file in and then your done. Do note that when the 
+   directory/folder name already exist, an error message will display asking you to enter another unique directory/folder name. Further information on how the python program/module
+   works can be found within the "grub-backup.py' file.
+   
+
+# Python Version used for development/testing
+
+Python Version: Python 2.7.15rc1 - Default python version which comes with 'Linux Mint 19 Tara'
+   
+
+# Backup Directory Location
+
+Ubuntu/Debian based distribution: "/etc/default/grub_backup" - Default backup directory of the users 'grub' file's ('grub_backup' folder gets produced by the 'grub-backup.py' python                                  module/program)
 
 # Testing
 
