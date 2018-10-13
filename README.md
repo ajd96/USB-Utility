@@ -14,7 +14,7 @@ The reason why I created this project is to solve specific USB related issues ac
 
 3. 'grub' file backup will be added to allow the user to backup their orginal/working version of the grub file. This will provide confidence to the user before using/applying any changes to the Linux 'grub' boot configuration file using the project/program. (Done)
 
-4. 'grub' file restore will be added to allow the user to automatically restore the previous/selected 'grub' within the system. This feature relies on the fact that the user has produced a 'grub' backup file before hand and the 'grub file backup' feature is implemented within the project.
+4. 'grub' file restore will be added to allow the user to automatically restore the previous/selected 'grub' within the system. This feature relies on the fact that the user has produced a 'grub' backup file before hand and the 'grub file backup' feature is implemented within the project. (DONE)
    
 5. 'grub' file deletion will be added to allow the user to delete the backup date of the 'grub' file's with the purpose of allowing the user to clear the system when required. (Done)
 
