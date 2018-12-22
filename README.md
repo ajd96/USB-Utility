@@ -36,7 +36,13 @@ The reason why I created this project is to solve specific USB related issues ac
 
 1. Consider creating a simple GUI option within python for the user to interact with the program. User interface will contain easy to use button selection to automatically apply the USB related fixes aswell as additional options/features within the program. Either use a GUI tool like glade for an interactive GUI option or use a interactive terminal based program using 'Ncurses'.
 
-The GUI implementation option is open to anyone who would like to implement this feature. (Due to time, I simply do not have enough time to complete this at this stage.)
+The GUI implementation option is open to anyone who would like to implement this feature. (Due to time, I simply do not have   enough time to complete this at this stage.)
+
+# Notes
+
+1. The additional features the project offers (Grub backup, grub file restore and grub deletion/cleaning is optional features to use as these tools were designed for beginners to use or provide ease of use to the user who decides to use the features.
+
+2. Any software bugs / documentation errors, please create a pull request with the applied changes or contact me with the following methods within the "Contact Me" section.
 
 # Python Version used for development/testing
 
@@ -49,6 +55,12 @@ Ubuntu/Debian based distribution: "/etc/default/grub_backup" - Default backup di
 # Disclaimer
 
 This project has only being tested on my system and the solutions applied within this project solved my specific issues. Use at your own risk and always create BACKUPS before modifying any system related files in case system related issue occurs in which then you can recover easily without losing valuable data/information.
+
+# Contact Me
+
+Join the discord server using the following web address: https://discord.gg/B8NmmuM
+
+Email me at: day.ashleigh@gmail.com
 
 # Author / Credits
 
