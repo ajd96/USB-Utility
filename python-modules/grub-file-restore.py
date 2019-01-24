@@ -1,8 +1,7 @@
 '''
-@Author: Ashleigh Day
+@Author: Mr. Ashleigh Day (Software Engineer)
 @Date: 22/09/18
 @Github: https://github.com/Xynous/USB-Utility
-
 
 @Purpose: The purpose of this python program/module is to provide a 'grub' file restore feature which will allow the user to restore their orignal backed up
 'grub' file on the linux filesystem by inserting or selecting the text. The feature however does rely on the user to have already created a 'grub' backup using
@@ -10,14 +9,17 @@ the 'grub-backup.py' python module/program, otherwise this features would be use
 CLI based interface which will display the 'sub' backup directorys which the user has created to provide convenience for the user to display the created 'grub' backups
 without interacting with external windows. The python module/program also contains basic error checking with the 'grub_backup' directory and the 'sub' backup directorys
 in terms of detecting the directorys already exist or detecting invalid input which will trigger the event handler to close the program.
-
 '''
 
 import os    # Imports the 'os' library to support Linux based system execution.
 
+def tidy_and_exit():    # Method closes the program gracefully.
+    exit()
+
 grubBackupDirectory = "/etc/default/grub_backup"    # Declared and initilized string to store the default 'grub_backup' directory.
 defaultGrubFile = "/etc/default"    # String variable storing the default/working grub file within the Linux filesystem.
 grubRestoreExecution = "sudo cp "   # String variable storing parts of the Linux copy 'cp' operation syntax for later usage within the python module/program.
+linux_update_grub_command = "sudo update-grub"    # String stores the 'update-grub' command
 
 directoryAlreadyExist = os.path.isdir("/etc/default/grub_backup")	# Gets the filesystems directory to see if it exists, if the directory exists return true otherwise return false.
 
@@ -27,7 +29,7 @@ if directoryAlreadyExist:    # Directory already exist, continue execution of th
 else:   # Exit python program gracefully if directory does not exist. This assumes the user has not created any 'grub' file backups automatically using the 'grub-backup.py' module.
     print("[ERROR] No backup files/directory's exist 'grub_backup'")
     print("Closing Program!")
-    exit()  # Exit method.
+    tidy_and_exit()  # Exit method.
 
 ReturnedDir = os.listdir(grubBackupDirectory)   # Method returns a list of directorys from the specified directory.
 
@@ -51,11 +53,13 @@ subDirectoryAlreadyExist = os.path.isdir(subDirectoryString_Concatenation)	# Get
 if subDirectoryAlreadyExist:    # If the 'sub' directory already exist return 'True' and execute block.
     print("'grub' file restored successfully!")     # Print string to terminal.
 else:   # Execute 'else' statement if the condition is 'False'.
-    print("[ERROR] sub directory or 'grub' file does not exist")    # Print string to terminal.
+    print("[ERROR] sub directory does not exist or invalid input detected")    # Print string to terminal.
     print("Closing Program!")   # Print string to terminal.
-    exit() # Exit method which will close the program.
+    tidy_and_exit() # Exit method which will close the program.
 
 
 grubRestoreExecution_Concatenation = grubRestoreExecution + grubBackupDirectory + "/" + grubRestoreInput + "/" + "grub" + " " + defaultGrubFile     # Concatenates the final execution string to copy the selected 'grub' file to the 'default' directory (Current used version on Linux filesystems).
 
 os.system(grubRestoreExecution_Concatenation)   # Executes the Linux system command to perform the copy 'cp' operation on the 'grub' backup file to the 'default' directory.
+
+os.system(linux_update_grub_command)    # Executes system command, will execute the 'update-grub' command to update the latest changes to the 'grub' file
