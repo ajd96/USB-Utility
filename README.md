@@ -32,12 +32,6 @@ The reason why I created this project is to solve specific USB related issues ac
 4. To use the 'grub' automatic deletion/cleaning feature, simply download the python program 'grub_backup_deletion.py'  within the 'python-modules' folder, then execute the python program on
    the systems terminal window using the command 'python grub_backup_deletion.py' and then follow the terminal window prompts by inputting 'yes' or 'no'. Note that the module has additional checks which may prevent the module to run, an example of this could be '[ERROR] No backup files/directory's exist 'grub_backup' which means the 'grub_backup' folder is missing from the Linux filesystem directory '/etc/default' and requires creation manually or using the 'grub-backup.py' module. Addtional information about the module can be found within the 'grub_backup_deletion.py' file which is located within the 'python-modules' folder.
    
-# Future Project Features
-
-1. Consider creating a simple GUI option within python for the user to interact with the program. User interface will contain easy to use button selection to automatically apply the USB related fixes aswell as additional options/features within the program. Either use a GUI tool like glade for an interactive GUI option or use a interactive terminal based program using 'Ncurses'.
-
-The GUI implementation option is open to anyone who would like to implement this feature. (Due to time, I simply do not have   enough time to complete this at this stage.)
-
 # Notes
 
 1. The additional features the project offers (Grub backup, grub file restore and grub deletion/cleaning is optional features to use as these tools were designed for beginners to use or provide ease of use to the user who decides to use the features.
@@ -46,7 +40,7 @@ The GUI implementation option is open to anyone who would like to implement this
 
 # Python Version used for development/testing
 
-Python Version: Python 2.7.15rc1 - Default python version which comes with 'Linux Mint 19 Tara'
+Python Version: Python 2.7.15rc1 / Python 2.7 - Default python version which comes with 'Linux Mint 19 Tara' and Ubuntu 18.04.1 LTS
    
 # Backup Directory Location
 
