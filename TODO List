@@ -4,7 +4,7 @@ TODO:
 
 2. Gradually rewrite the documentation on github and within the python source files. Overall, confirm source file comments and github documentation is correct. (Mention in the testing section that this was tested on older AMD hardware/Motherboards (Fx8370 CPU motherboards). This task will be done overtime.
 
-3. Consider designing a simple GTK based (or equivalent) user interface (GUI) for the python modules functionality. This provides ease to use user interface compared to just terminal interaction. (Already documented on github)
+3. Consider designing a simple GTK based (or equivalent) user interface (GUI) for the python modules functionality. This provides ease to use user interface compared to just terminal interaction.
 
 
 Finished:
