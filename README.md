@@ -4,11 +4,11 @@ A user space application developed in python to deal with USB related issues on 
 
 # Why create this project?
 
-The reason why I created this project is to solve specific USB related issues across the Ubuntu/Debian Linux distributions easily for users from technical to none technical backgrounds in hope it become useful and solves USB related issues easily for everyone.
+The reason why I created this project is to solve specific USB related issues across the Ubuntu/Debian Linux distributions easily for users from technical to none technical backgrounds in hope it becomes useful and solves USB related issues easily for everyone.
 
 # Features
 
-1. Fixing the issue of USB 3.0 not working (By adding the command/parameter 'iommu=soft' to the grub file located in '/etc/default/grub' and somehow disable the iommu in the bios (disabling iommu in bios may require the user manually doing it before executing/running the utility program). Also once the utility has executed and added the string data on the end of the file in the grub section 'GRUB_CMDLINE_LINUX', the utility program will need to execute the command 'update-grub' to update the latest grub file configurations for the fix to take affect on system restart/booting into the ubuntu based distribution. (DONE)
+1. Fixing the issue of USB not working (By adding the command/parameter 'iommu=soft' to the grub file located in '/etc/default/grub' and somehow disable the iommu in the bios (disabling iommu in bios may require the user manually doing it before executing/running the utility program). Also once the utility has executed and added the string data on the end of the file in the grub section 'GRUB_CMDLINE_LINUX', the utility program will need to execute the command 'update-grub' to update the latest grub file configurations for the fix to take affect on system restart/booting into the ubuntu based distribution. (DONE)
 
 2. 'grub' file backup will be added to allow the user to backup their orginal/working version of the grub file. This will provide confidence to the user before using/applying any changes to the Linux 'grub' boot configuration file using the project/program. (DONE)
 
@@ -18,8 +18,8 @@ The reason why I created this project is to solve specific USB related issues ac
 
 # How to (Needs to be reviewed/filled in to complete project documentation
 
-1. To fix USB related issues on Ubuntu/Debian based Linux distributions, simply download the python program 'USB-3.0-Fix.py' within the 'python-modules' folder, execute the python program on the system using the command 
-'python USB-3.0-Fix.py' within the terminal window, restart your system and enter the bios menu to disable the 'iommu' feature within the bios settings, save the bios settings, restart the system and boot into your Linux distribution and test to see if the 'USB-3.0' ports work correctly as expected. Do note that when you boot into your system after the above changes and your mouse/keyboard is not working,this is due to disabling the 'iommu' within the bios and re-enabling this feature will fix this problem. Refer to the testing section for additional information.
+1. To fix USB related issues on Ubuntu/Debian based Linux distributions, simply download the python program 'USB-Fix.py' within the 'python-modules' folder, execute the python program on the system using the command 
+'python2.7 USB-Fix.py' within the terminal window, restart your system and enter the bios menu to disable the 'iommu' feature within the bios settings, save the bios settings, restart the system and boot into your Linux distribution and test to see if the 'USB' ports work correctly as expected. Do note that when you boot into your system after the above changes and your mouse/keyboard is not working,this is due to disabling the 'iommu' within the bios and re-enabling this feature will fix this problem.
 
 2. To use the 'grub' backup feature within the project, simply download the python program 'grub-backup.py' within the 'python-modules' folder, execute the python program on
    the system using the command 'python grub-backup.py', enter the directory/folder name you wish to store your 'grub' file in and then your done. Do note that when the 
@@ -41,6 +41,10 @@ The reason why I created this project is to solve specific USB related issues ac
 # Python Version used for development/testing
 
 Python Version: Python 2.7.15rc1 / Python 2.7 - Default python version which comes with 'Linux Mint 19 Tara' and Ubuntu 18.04.1 LTS
+
+# Default Grub Location
+
+Location/Path: /etc/default - Find the file named "grub"
    
 # Backup Directory Location
 
@@ -48,7 +52,7 @@ Ubuntu/Debian based distribution: "/etc/default/grub_backup" - Default backup di
 
 # Disclaimer
 
-This project has only being tested on my system and the solutions applied within this project solved my specific issues. Use at your own risk and always create BACKUPS before modifying any system related files in case system related issue occurs in which then you can recover easily without losing valuable data/information.
+This project has only being tested on my system and the solutions applied within this project solved my specific issues. Use at your own risk and always create BACKUPS before modifying any system related files in case system related issue occurs in which then you can recover easily without losing valuable data/information. This repository contains tools to backup your "grub" file so if you are unsure either use the tool to backup the file or backup manually, you can find the file in the "Default Grub Location" section.
 
 # Contact Me
 
