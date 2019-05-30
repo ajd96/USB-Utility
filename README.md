@@ -38,6 +38,8 @@ The reason why I created this project is to solve specific USB related issues ac
 
 2. Any software bugs / documentation errors, please create a pull request with the applied changes or contact me with the following methods within the "Contact Me" section.
 
+3. This utility was tested on AMD based hardware as I found AMD suffered most with this problem. To be specific, the motherboard brand was a gigabyte and the processor was a FX 8370 8 core processor. The motherboard model this utility was tested and used on was the "GA-990FX-Gaming (G1 Gaming)". Do note that this utility can be also used on Intel based systems too if for example the USB ports are not working on Ubuntu/Debian based systems.
+
 # Python Version used for development/testing
 
 Python Version: Python 2.7.15rc1 / Python 2.7 - Default python version which comes with 'Linux Mint 19 Tara' and Ubuntu 18.04.1 LTS
