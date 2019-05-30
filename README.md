@@ -16,7 +16,7 @@ The reason why I created this project is to solve specific USB related issues ac
    
 4. 'grub' file deletion will be added to allow the user to delete the backup date of the 'grub' file's with the purpose of allowing the user to clear the system when required. (DONE)
 
-# How to (Needs to be reviewed/filled in to complete project documentation
+# How to use
 
 1. To fix USB related issues on Ubuntu/Debian based Linux distributions, simply download the python program 'USB-Fix.py' within the 'python-modules' folder, execute the python program on the system using the command 
 'python2.7 USB-Fix.py' within the terminal window, restart your system and enter the bios menu to disable the 'iommu' feature within the bios settings, save the bios settings, restart the system and boot into your Linux distribution and test to see if the 'USB' ports work correctly as expected. Do note that when you boot into your system after the above changes and your mouse/keyboard is not working,this is due to disabling the 'iommu' within the bios and re-enabling this feature will fix this problem.
