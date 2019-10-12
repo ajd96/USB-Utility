@@ -58,11 +58,9 @@ This project has only being tested on my system and the solutions applied within
 
 # Contact Me
 
-Join the discord server using the following web address: https://discord.gg/B8NmmuM
-
 Email me at: day.ashleigh@gmail.com
 
 # Author / Credits
 
-Mr. Ashleigh Day - (Software Engineer).
+Mr. Ashleigh Day - Computer Scientist
 
