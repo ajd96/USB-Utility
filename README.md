@@ -56,11 +56,7 @@ Ubuntu/Debian based distribution: "/etc/default/grub_backup" - Default backup di
 
 This project has only being tested on my system and the solutions applied within this project solved my specific issues. Use at your own risk and always create BACKUPS before modifying any system related files in case system related issue occurs in which then you can recover easily without losing valuable data/information. This repository contains tools to backup your "grub" file so if you are unsure either use the tool to backup the file or backup manually, you can find the file in the "Default Grub Location" section.
 
-# Contact Me
-
-Email me at: day.ashleigh@gmail.com
-
 # Author / Credits
 
-Mr. Ashleigh Day - Computer Scientist
+Mr. Ashleigh Day - Software Engineer
 
